@@ -1,1 +1,1 @@
-#This repository will store my notes from the the Coding Dojo Web Development course.
+#This repository contains my notes from the Coding Dojo Web Development course.
