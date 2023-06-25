@@ -39,3 +39,12 @@ img {
     margin: 1em;
     padding: 1em;
 }
+
+.citation {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    font-size: medium;
+    font-family: courier;
+    font-weight: 500;
+}
