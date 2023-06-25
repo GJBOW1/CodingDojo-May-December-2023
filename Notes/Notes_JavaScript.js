@@ -532,6 +532,8 @@ function returnMe(element) {
 }
 
 *Nesting Arrays:
+Arrays are capable of having arrays inside of them. Assuming we're given an array like...
+
 var arr2d = [ [2, 5, 8],
               [3, 6, 1],
               [5, 7, 7] ];
@@ -540,6 +542,150 @@ We can console.log the `8` in this array if we
 console.log(arr2d[0][2]);
 the first index `0` will select the `[2, 5, 8]` sub-array
 the second index `2` will select the `8` out of that sub-array
+
+Could we determine if a certain value was present? Write a function called isPresent2d(arr2d, value) that returns 
+true if the value is present and false otherwise
+
+Note - Don't assume the array will always be the same size, we must rely on its .length property
+
+Hint - Can we put a for loop inside another for loop?
+
+Flatten Array
+Given a 2 dimensional array (an array containing arrays), return a new array containing just the values from 
+inside the sub-arrays. Don't assume the array will always be the same size, or that the sub-arrays are all 
+the same length (the array might be jagged). Don't use built-in methods like Array.prototype.flat() but feel 
+free to use .push(value) and/or .pop() where needed.
+
+complete the following function
+function flatten(arr2d) {
+    var flat = [];
+    insert your code here
+    return flat;
+}
+    
+var result = flatten( [ [2, 5, 8], [3, 6, 1], [5, 7, 7] ] );
+console.log(result); // we expect to get back [2, 5, 8, 3, 6, 1, 5, 7, 7]
+
+Click Event:
+When a user visits our website they are presented with information in our HTML with a look and feel shaped by our CSS. In order 
+to interact with our website, we will need to provide the user with elements they can click, elements they can scroll or swipe, 
+and forms they can fill out. As the programmer we have no way of knowing beforehand how long it will take a user to fill out a 
+form or exactly when a user might click a button so we need to write code that can react to the user. We can do this through 
+events. The simplest event we can react to is the onclick event which is triggered by a user left clicking their mouse or tapping 
+on a touchscreen over the element.
+
+<button onclick="alert('hello')">Click Me!</button>
+
+If we add an additional attribute called onclick on the element in our HTML we can set the onclick equal to a JavaScript function 
+that will then be executed. In the example above it will trigger an alert which will display a dialog window showing whatever 
+message we provide to it.
+
+Linking to Scripts:
+In the previous example we show how easily we can use a built in function like alert, what if we want to use a custom function 
+that we have written ourselves? We can write our own custom function in a JavaScript file maybe naming it something like script.js.
+
+function custom() {
+    we can include more code here if we want to
+    console.log("this message is coming from script.js");
+}
+
+We have used a <link> tag to include our CSS into our HTML, with JavaScript we need to use a <script> tag.
+
+<script src="script.js"></script>
+
+
+The Use of 'This':
+As we've seen in the previous lesson, we can use alert() to react to users clicking on elements in our page. If we want to do 
+something more, like manipulate the element that is clicked on we can make use of 'this', a special parameter to pass into the 
+custom JavaScript functions we can write.
+
+html:
+<button onclick="example(this)">
+    Click Me
+</button>
+
+JavaScript:
+function example(element) {
+    console.log("element clicked", element);
+}
+
+Together, the phrase would be "this element", meaning that 'this' is self-pointing and when you click on it, you will be manipulating
+that element. 
+
+The power of this is that we can then use JavaScript to read the content of the element or to even manipulate it if we like. 
+There are a number of things we can do to manipulate the element like changing its style or changing its content. Text is one 
+of the most common things we can manipulate, and we can do this by using the .innerText property.
+
+html: 
+<button onclick="turnOff(this)">On</button>
+<button onclick="turnOff(this)">On</button>
+<button onclick="turnOff(this)">On</button>
+
+JavaScript:
+function turnOff(element) {
+    element.innerText = "Off";
+}
+
+Notice how in each case the button that is changed (turns from the word 'on' to 'off') is the one that is clicked? That's the magical 
+property of this, it let's us know exactly which element we are clicking. Another interesting thing we can do with the element is 
+to actually remove it from  the page. We can do this by using a method of the element called .remove().
+
+html: 
+<img src="ninja.png" alt="ninja" onclick="hide(this)">
+<img src="ninja.png" alt="ninja" onclick="hide(this)">
+<img src="ninja.png" alt="ninja" onclick="hide(this)">
+
+JavaScript:
+function hide(element) {
+    element.remove();
+}
+
+Hover Event: 
+There are more events besides those tied to clicking on elements on our website, one such event relates to the user hovering 
+(positioning their mouse) over an element. This is incredibly useful in some situations, giving us more ways of interacting with 
+our user. Hover is commonly used with two separate events: the part where the user's mouse is first over the element onmouseover, 
+and the part where it leaves the element onmouseout. For an example consider the following code.
+
+<div class="block" onmouseover="over(this)" onmouseout="out(this)"></div>
+
+html: 
+.block {
+    height: 50px;
+    width: 200px;
+    background-color: silver;
+    border: 1px dotted black;
+}
+
+css:
+.block {
+    height: 50px;
+    width: 200px;
+    background-color: silver;
+    border: 1px dotted black;
+}
+
+JavaScript: 
+function over(element) {
+    alert("mouseover");    
+}
+function out(element) {
+    alert("mouseout");    
+}
+
+This code will alert messages when the user hovers their mouse over the block. In this example we also include a special extra 
+parameter when we call the function, this. In the JavaScript functions these parameters are named element. If we remember this 
+from the previous tacos example we might have an idea what it is already. In this case the parameter element is a JavaScript 
+object we can manipulate just like the tacos or pizzas we made before!
+
+function over(element) {
+    element.style.backgroundColor = "lime";    
+}
+    
+function out(element) {
+    element.style.backgroundColor = "silver";   
+}
+
+
 
 
 
