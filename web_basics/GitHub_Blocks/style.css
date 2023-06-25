@@ -1,0 +1,41 @@
+body {
+    background-color:khaki;
+}
+
+.header {
+    display: flex;
+    font-size:3em; 
+    font-weight: 700;
+    font-family: Courier;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.top {
+    display: flex;
+    background-color: green;
+    justify-content: space-evenly;
+    margin: 2em;
+    
+}
+
+.middle {
+    display: flex;
+    background-color: dodgerblue;
+    justify-content: space-evenly;
+    margin: 2em;
+}
+
+.bottom {
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: space-evenly;
+    margin: 2em;
+}
+
+img {
+    width: 13em;
+    margin: 1em;
+    padding: 1em;
+}

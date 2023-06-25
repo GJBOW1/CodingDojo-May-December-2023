@@ -1,0 +1,53 @@
+
+#container {
+    margin: 100px 0px 0px 50px;
+}
+
+div {
+    margin: 10px;
+}
+
+#search {
+    border-radius: 50px; 
+    width: 150px;
+    height: 25px; 
+    border-color: rgb(40, 181, 202);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    font-style: normal;
+    text-decoration: rgb(40, 181, 202);
+    color: rgb(40, 181, 202);
+    background-color:rgb(244, 241, 241)
+}
+
+::placeholder {
+    color: rgb(40, 181, 202);
+}
+
+#plus {
+color: rgb(86, 216, 173);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+color: white;
+background-color: rgb(86, 216, 173);
+border-color: rgb(86, 216, 173);
+border-style: solid;
+font-weight: 600;
+font-size: large;
+}
+
+#account {
+    height: 35px;
+    width: 175px;
+    color: black;
+    border: solid;
+    border-width: 2px;
+    background-color: rgb(43, 124, 205);
+    font-size: large;
+    color: rgba(255, 255, 255, 0.783);
+    border-color: black;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 0%;
+}

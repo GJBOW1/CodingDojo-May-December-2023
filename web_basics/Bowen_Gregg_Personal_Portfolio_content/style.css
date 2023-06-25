@@ -1,0 +1,48 @@
+h1 {
+    color:maroon;
+    font-size: 40px;
+    font-family: 'Courier', Courier, monospace;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+* {
+    background-color: rgb(156, 175, 205);
+    border: darkgreen;
+}
+
+.picture-context {
+    font-size: x-small;
+    font-style: italic;
+}
+
+body > img{
+    width: 250px;
+    
+}
+
+h2 {
+    color: maroon;
+}
+
+.is-about {
+    color: rgb(45, 75, 50);
+}
+
+th {
+    text-decoration: underline;
+    color: maroon;
+}
+
+td {
+    color: rgb(45, 75, 50);
+}
+
+form {
+    color: maroon;
+    font-size: larger;
+    font-weight: bold;
+    border-width: 3px;
+    border-style:solid;
+}
+
