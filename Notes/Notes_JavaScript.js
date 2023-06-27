@@ -685,8 +685,135 @@ function out(element) {
     element.style.backgroundColor = "silver";   
 }
 
+Using querySelector:
+We've seen how we can use our CSS to select HTML elements that we want to style, but how would we do something similar in our 
+JavaScript? It turns out that what we've already learned about css selectors can be still be applied, and we can continue to 
+write selectors. The way we do that is to use a function called document.querySelector. If we want to select an element with 
+an id of "title" we can write code that looks like the following.
 
+<h1 id="title">Hello World</h1>
 
+OR:
+
+Both of these will select the h1 tag:
+var h1 = document.querySelector("h1");
+var title = document.querySelector("#title");
+
+We can also combine selectors like we've seen before. If for instance we had an image inside of an element with the class 
+"nav" we could write code that looks like the following.
+
+<div class="nav">
+    <img src="logo.png" alt="logo">
+    <h1>Hello World</h1>
+</div>
+
+OR
+
+var logoImg = document.querySelector(".nav img");
+
+Note: if there happens to be more than one element this could match then querySelector will only return the first element it finds. 
+If there is no matching element then we will get back null instead.
+
+Changing an HTML Element: 
+
+Using JS we can modify the HTML elements that we select. If the tag displays text, like an h3 or a p tag then that text is something 
+that we can modify. The way we can do this is by using innerText.
+
+html:
+<h3>Lorem Ipsem</h3>
+
+JS:
+var h3 = document.querySelector("h3");
+h3.innerText = "New Title";
+
+We can also alter HTML elements by changing their attributes. If for instance our HTML element were an img tag, we would be able 
+to change its src or alt attributes. If we were to change the src from one particular file to a different file it will change 
+the image that is displayed on the page.
+
+<img src="cat.jpg" alt="pet" id="pet-img" />
+<button onclick="switchImg()">Switch</button>
+
+html:
+var petImg = document.querySelector("#pet-img");
+
+JS:
+function switchImg() {
+    petImg.src = "dog.jpg";  
+}
+Changing an element's style:
+
+The HTML tags we can alter also have css that is applied to them. This is something that we can change using JS as well. 
+If were to want to change how a button looks in response to it being pressed, we could do something like this.
+
+html:
+<button onclick="setActive(this)">Switch to dark mode</button>
+
+JS:
+function setActive(element) {
+    element.style.backgroundColor = "#222222";
+    element.style.color = "#ffffff";
+}
+
+The element's .style is a JS object that contains all of the CSS styles we can apply for the element. In this case we change 
+its color and also its background-color. Note that when we're using a CSS property that is normally hyphenated, in our 
+JavaScript we will need to rewrite it with alternating capitalization, for example margin-left becomes marginLeft. Sometimes 
+we want to apply a number of CSS properties at once and while we can do that with .style it may be more efficient for us to 
+use a css class and set the element to that class, which is detailed on the css sheet. We could rewrite the above example 
+to use a class like so.
+
+html:
+<button onclick="setActive(this)">Switch to dark mode</button>
+
+function setActive(element) {
+    element.classList.add("dark-mode");
+}
+
+This way whatever styles are present in the CSS class dark-mode are applied to the button. Note that an element is allowed 
+to have multiple classes so we can treat the classList as if it is like an Array. The classList can be used with .add to push 
+a new class to the list and .remove to remover a specific class. We can combine all of what we've learned make a button that 
+we can toggle from one mode to another.
+
+html:
+<button onclick="setActive(this)">Switch to dark mode</button>
+
+JS:
+function setActive(element) {
+    if(element.classList.includes("dark-mode")) {
+        element.innerText = "Switch to light mode";
+        element.classList.remove("dark-mode");
+    } else {
+        element.innerText = "Switch to dark mode";
+        element.classList.add("dark-mode");
+    }
+}
+
+Timeout:
+Sometimes we want to apply a delay in our code which can be done in JavaScript by using a function called setTimeout. 
+The setTimeout function takes two parameters: (1) a function to be called and (2) the delay in milliseconds. The function 
+we provide is often referred to as a callback function and we do not need to invoke it ourselves, we just need to put its 
+name in as a parameter. The setTimeout will call the callback function after the amount of time provided.
+
+JS:
+function message() {
+    console.log("Delayed message");    
+}
+    
+console.log("Start");
+setTimeout(message, 3000);
+console.log("End");
+
+What order do we expect the above code to run in?
+The "Start" and "End" messages will display right away and the message() function will run after 3 seconds.
+
+Input and Change:
+We've previously seen events that relate to a user clicking on a given element or positioning their mouse over it. There is 
+another type of events that we should also familiarize ourselves with relating to users interacting with our forms. In our 
+forms the elements that the user can interact with are commonly the input, textarea, select tags and while we can still use 
+click and hover events with them if we want to know when a user has typed some text into a field or selected an option we 
+have events that relate to those things happening.
+
+Consider an example with a select tag containing multiple options. If we want to react to the option being changed we can 
+write code that looks like the following.
 
 
 
