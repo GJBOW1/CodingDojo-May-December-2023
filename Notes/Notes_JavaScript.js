@@ -815,6 +815,37 @@ have events that relate to those things happening.
 Consider an example with a select tag containing multiple options. If we want to react to the option being changed we can 
 write code that looks like the following.
 
+html:
+<label>I would like to eat </label>
+<select onchange="chooseLunch(this)">
+    <option>Tacos</option>
+    <option>Pasta</option>
+    <option>Sushi</option>
+</select>
+
+JS:
+function chooseLunch(element) {
+    alert("You picked " + element.value);
+}
+
+We can also react to a user typing into a text element. In the following example when the text inputs are changed the card 
+text will change to match.
+
+html:
+<div class="card">
+    <p>Hello my name is:</p>
+    <h3 id="name-tag">Example</h3>
+</div>
+    
+<input type="text" value="Example" oninput="setName(this)">
+
+JS:
+var nameTag = document.querySelector("#name-tag");
+function setName(element) {
+    console.log(element.value);
+    nameTag.innerText = element.value;
+}
+
 
 
 */
