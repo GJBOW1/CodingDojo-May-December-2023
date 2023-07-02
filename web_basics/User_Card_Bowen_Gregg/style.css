@@ -1,0 +1,72 @@
+/* * {
+    border: solid 1px red; 
+} */
+
+
+body {
+    width: 1300px;
+    height: 900px; 
+    font-family:'Lucida Sans'; 
+    font-weight: 500;
+}
+
+.container {
+    position: relative;
+    top: 3em;
+    left: 15em;
+    width: 800px;
+    height: 375px;
+    margin: 5em; 
+    border: solid 2px rgb(188, 175, 175);
+}
+
+.header {
+    background-color: rgb(54, 168, 168);
+    height: 100px;
+}
+
+.user {
+    margin: 2em 0em 0em 2em;
+}
+
+.name {
+    margin: 2em 0em 0em 0em; 
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    margin: 1em 0em 0em 0em; 
+}
+
+.avatar img {
+    width: 100px; 
+    margin: 3em 0em 0em 2em; 
+}
+
+span img {
+    width: 20px; 
+    margin: 0px 1em 0em 0em; 
+}
+
+.position {
+    margin: 1em 0em 0em 0em; 
+}
+.position p {
+    margin: 0em; 
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    margin: 1em 0em 0em 0em; 
+    text-decoration: underline;
+    color: rgb(23, 91, 151);
+}
+
+.edit span {
+    margin: 2px 0px 0px 0px;
+}
