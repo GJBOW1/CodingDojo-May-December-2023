@@ -496,6 +496,74 @@ use of the position property, vertical-align is the best approach.
 
 --html notes as of 25 June 2023
 
+*To change content within CSS using JS: 
+
+HTML: 
+<h1     onclick = "changeText(this)">This is the Topic Line</h1>
+
+JS: 
+function changeText(element) {
+    var newText = 'Back to the Future'
+    element.innerText = newText
+}
+
+At this point, when you click on that element in the html webpage, it should change the h1 to read "Back to the Future"
+
+If you wanted to change it back/forth between Back to the Future and This is the Topic Line, you could do this:
+
+function changeText(element) {
+    var newText = 'Back to the Future'
+    if (element.innerText == newText) {
+        element.innerText = 'This is the Topic Line'
+    }
+    else {
+        element.innerText =newText
+    }
+}
+
+Hover Change CSS Event:
+
+html:
+<a href="yourlinkgoeshere" onmouseover= "changeName()" onmouseout = "returnMe()" ID= "hover"> Link Name </a>
+
+JS:
+changeMe() {
+    var a = document.getElementByID('hover')
+    a.style.color = 'white';
+    a.style.textDecoration = 'underline';
+}
+
+returnMe() {
+    var = document.getElementByName('a')
+    a.style.color = "#000080";
+    a.style.textDecoration = 'none';
+}
+
+onClick DsplayDate:
+
+html:
+<button onclick="displayDate()">img src="putyourimagehere" alt="image name"</button>
+
+JS:
+function displayDate() {
+    var myTime = new Date();
+    alert(myTime)
+}
+
+To add text into an inner area of an element:
+
+html:
+<h2 id="hello"></h2>
+
+JS:
+var hi = document.getElementbyID("hello")
+hi.innerText = "Hey there!"
+
+
+If you are changing styles, you will use the document.style....method. But if you are changing the text of a page,
+you will use the this/element method with innerText (element.innerText = ...)
+
+If you want to add straight up html elements to the html page, then you can use hi.innerHTML = `<span>whatever you want here </span>` 
 
 
 
