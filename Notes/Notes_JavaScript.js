@@ -917,4 +917,19 @@ you will use the this/element method with innerText (element.innerText = ...)
 
 If you want to add straight up html elements to the html page, then you can use hi.innerHTML = `<span>whatever you want here </span>` 
 
+Dates: getDate() and getDay():
+
+Note: the .getDay() part of this code will return a number between 0 and 6 where 0 is Sunday and 6 is Saturday
+
+var today = new Date();
+if(today.getDay() == 1) {
+    console.log("I hate Mondays!");
+}
+    
+if(today.getDay() != 1) {
+    console.log("Today is alright!");
+}
+
+
+
 */
