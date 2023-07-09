@@ -1,0 +1,239 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    background-color: black;
+    color: white;
+
+}
+
+.header p {
+    display: flex;
+    font-weight: bold;
+    margin: 0em 0em 0em 1em;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.secondHeader {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.feed {
+    display: flex;
+    font-size: 30px;
+
+}
+
+.bottom {
+    display: flex; 
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 250px;
+    border: 3px solid black; 
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    margin: 0em 0em 1em 0em;
+}
+
+span {
+    color: rgb(79, 79, 219);
+    text-decoration: underline;
+}
+
+.avatarContainer p {
+    margin: .5em;
+}
+
+.name {
+    font-size: x-large;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer1 {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    border: solid 3px black;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.upper1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0em 0em 0em 0em;
+    align-items: center;
+}
+
+.user1 {
+    font-size: x-large;
+}
+
+.likeButton1 {
+    display: flex;
+}
+
+.likes1 {
+    display: flex;
+    font-size: large;
+}
+
+.likeText1 {
+    display: flex;
+    margin: 0em 0em 0em 5px;
+    align-items: center;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(209, 177, 49);
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower1 {
+    display: flex;
+    margin: 0em 0em 0em 3em;
+    font-size: larger;
+    flex-direction: column;
+}
+
+.lower1 p {
+    margin: 0em;
+}
+
+.lowest p {
+    margin: 0em 0em 0em 2.25em;
+    font-size: larger;
+}
+
+.mainContainer2 {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    border: solid 3px black;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.upper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0em 0em 0em 0em;
+    align-items: center;
+}
+
+.user2 {
+    font-size: x-large;
+}
+
+.likeButton2 {
+    display: flex;
+}
+
+.likes2 {
+    display: flex;
+    font-size: large;
+}
+
+.likeText2 {
+    display: flex;
+    margin: 0em 0em 0em 5px;
+    align-items: center;
+}
+
+.lower2 {
+    display: flex;
+    margin: 0em 0em 0em 3em;
+    font-size: larger;
+    flex-direction: column;
+}
+
+.lower2 p {
+    margin: 0em;
+}
+
+.mainContainer3 {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    border: solid 3px black;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.upper3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0em 0em 0em 0em;
+    align-items: center;
+}
+
+.user3 {
+    font-size: x-large;
+}
+
+.likeButton3 {
+    display: flex;
+}
+
+.likes3 {
+    display: flex;
+    font-size: large;
+}
+
+.likeText3 {
+    display: flex;
+    margin: 0em 0em 0em 5px;
+    align-items: center;
+}
+
+.lower3 {
+    display: flex;
+    margin: 0em 0em 0em 3em;
+    font-size: larger;
+    flex-direction: column;
+}
+
+.lower3 p {
+    margin: 0em;
+}

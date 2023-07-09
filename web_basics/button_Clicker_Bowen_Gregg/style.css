@@ -1,0 +1,213 @@
+/* * {
+    border: red 1px solid;
+} */
+
+body {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    width: 1000px;
+    background-color: gray;
+    height: 60px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    margin: 0em 1em 0em 1em;
+    font-weight: bold;
+}
+
+.searchBar input {
+    display: flex;
+    width: 20em;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 5em 0em 0em;
+    border: solid 1px black;
+}
+
+.login {
+    display: flex;
+    height: 30px;
+    width: 70px;
+    background-color: blue;
+    color: white;
+    border: black solid 1px;
+    box-shadow: 5px 5px black;
+    margin: 0em 3em 0em 10em;
+    justify-content: center;
+    align-items: center;
+    font-size: medium
+}
+
+.columns {
+    display: flex;
+    align-items: flex-start;
+    width: 1000px;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.firstBox {
+    display: flex;
+    border: 3px black solid;
+    height: 250px;
+    margin: 1em 1em 0em 0em;
+    flex-direction: row;
+}
+
+.leftFirstColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -4em 0em 0em 0em;
+    flex: 1;
+}
+
+.leftFirstColumn p {
+    justify-content: center;
+    display: flex;
+    margin: 1em 0em 0em 0em;
+}
+
+
+.ninja {
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.noun {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plural {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.firstClick {
+    display: flex;
+    width: 100px; 
+    height: 40px; 
+    background-color: rgb(247, 215, 8);
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    margin: 2em 0em 0em 0em;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.rightFirstColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    text-align: flex-start;
+    justify-content: center;
+    margin: 0em 0em 0em 3em;
+}
+
+.rightFirstColumn p {
+    margin: 0em;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.secondBox {
+    display: flex;
+    border: 3px black solid;
+    height: 250px;
+    margin: 1em 1em 0em 0em;
+    flex-direction: row;
+}
+
+.leftSecondColumn {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: -4em 0em 0em 0em;
+flex: 1;
+}
+
+.leftSecondColumn p {
+    display: flex;
+    margin: 1em 0em 0em 0em;
+}
+
+.rightSecondColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 0em 0em 0em 3em;
+    text-align: flex-start;
+    justify-content: center;
+}
+
+.rightSecondColumn p {
+    margin: 0em;
+    font-size: larger;
+    font-weight: bold;
+}
+
+span {
+    color: rgb(70, 70, 230);
+    text-decoration: underline;
+}
+
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dictionaryContainer {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: 1em 0em 0em 0em; 
+}
+
+.dictionaryContent {
+    margin: 1em;
+}
+
+.dictionaryContainer p {
+    margin: 0em;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.definition {
+    display: flex;
+    width: 300px; 
+    height: 40px; 
+    background-color: rgb(107, 175, 107);
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    margin: 2em 0em 0em 0em;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}

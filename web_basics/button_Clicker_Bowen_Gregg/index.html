@@ -1,0 +1,62 @@
+<!-- Button Clicker Assignment - Gregg Bowen -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="logo">
+            <p>Dojonary</p>
+        </div>
+        <div class="searchBar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div>
+            <button class="login" onclick="change(this)">Login</button>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="leftColumn">
+            <div class = "firstBox">
+                <div class="leftFirstColumn">
+                    <p class="ninja">ninja</p>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: ninjas</p>
+                    <button class="firstClick" onclick="message()">13 likes</button>
+                </div>
+                <div class="rightFirstColumn">
+                    <p>A practitioner skilled in the</p>
+                    <p><span>Japanese</span> art of <span>ninjutsu</span></p>
+                </div>
+            </div>
+            <div class = "secondBox">
+                <div class="leftSecondColumn">
+                    <p class="ninja">ninja</p>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: ninjas</p>
+                    <button class="firstClick" onclick="message()">37 likes</button>
+                </div>
+                <div class="rightSecondColumn">
+                    <p>A <span>programmer</span> who breaks</p>
+                    <p>down problems with <span>zen</span>-like</p>
+                    <p>focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightColumn">
+            <div class="dictionaryContainer">
+                <div class="dictionaryContent">
+                    <p>Dojonary is</p>
+                    <p>defined by YOU</p>
+                    <button class="definition" onclick="remove(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
