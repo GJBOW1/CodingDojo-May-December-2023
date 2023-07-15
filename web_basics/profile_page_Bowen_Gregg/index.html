@@ -32,13 +32,13 @@
                 </div>
                 <div class="lower">
                     <div class="user">
-                        <p class="name">Jane Doe</p>
+                        <p id="namePerson">Jane Doe</p>
                         <p class="location"><span><img src="./img/map-marker.png" alt="map marker"></span>Seattle</p>
                         <div class="position">
                             <p>Developer | Engineer | Problem Solver</p>
                             <p class="fun_fact">Master of Shadows and the Internet!</p>
                         </div>
-                        <p class="edit"><span><img src="./img/gear.png" alt="gear"></span>edit profile</p>
+                        <p class="edit" onclick="getName()"><span><img src="./img/gear.png" alt="gear"></span>edit profile</p>
                     </div>
                 </div>
             </div>
@@ -59,13 +59,13 @@
                     <p><span class="connectionCount">2</span>Connection Requests</p>
                 </div>
                 <div class="connectionProfiles">
-                    <div class="profileOne"><span><img src="./img/todd-s.jpg" alt="Todd E"></span>Todd E<span class="accept"><img src="./img/accept-circle.png" alt="accept"></span><span><img src="./img/close-circle.png" alt="close"></span></div>
-                    <div class="profileTwo"><span><img src="./img/phil-s.jpg" alt="Phil K"></span>Phil K<span class="accept2"><img src="./img/accept-circle.png" alt="accept"></span><span><img src="./img/close-circle.png" alt="close"></span></div>
+                    <div class="profileOne" onclick="disappear(this)"><span><img src="./img/todd-s.jpg" alt="Todd E"></span>Todd E<span class="accept" onclick="accepting()"><img src="./img/accept-circle.png" alt="accept"></span><span class="deny" onclick="denying()"><img src="./img/close-circle.png" alt="close"></span></div>
+                    <div class="profileTwo" onclick="disappear(this)"><span><img src="./img/phil-s.jpg" alt="Phil K"></span>Phil K<span class="accept2" onclick="accepting()"><img src="./img/accept-circle.png" alt="accept"></span><span class="deny2" onclick="denying()"><img src="./img/close-circle.png" alt="close"></span></div>
                 </div>
             </div>
             <div class="yourConnectionsContainer">
                 <div class="yourConnectionsHeader">
-                    <p><span class="yourConnectionsCount">500+</span>Your Connections</p>
+                    <p><span class="yourConnectionsCount">418</span>Your Connections</p>
                 </div>
                 <div class="yourConnectionsProfiles">
                     <div class="profileYoursOne"><span><img src="./img/adrien-s.jpg" alt="Adrien D"></span>Adrien D
@@ -83,5 +83,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

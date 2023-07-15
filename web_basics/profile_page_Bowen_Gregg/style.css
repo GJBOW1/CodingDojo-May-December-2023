@@ -43,7 +43,7 @@ body {
     margin: 2em 0em 0em 2em;
 }
 
-.name {
+#namePerson {
     margin: 2em 0em 0em 0em; 
     font-size: 2em;
     font-weight: bold;
