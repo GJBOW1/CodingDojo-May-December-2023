@@ -1,0 +1,86 @@
+<!-- DojoWeather Assignment - Gregg Bowen -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <div class="pageLogo">
+                <p>DojoWeather</p>
+            </div>
+            <div class="topNav">
+                <nav onclick="alerting()">Burbank</nav>
+                <nav onclick="alerting()">Chicago</nav>
+                <nav onclick="alerting()">Dallas</nav>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="locationHeader">
+                <div class="locationDetails">
+                    <p class="location">San Jose</p>
+                    <label for="dropdown">show temperature in:</label>
+                    <select id="dropdown" name="dropdown" size="1" onchange="changeTemperature()">
+                        <option value="F">°F</option>
+                        <option value="C" selected>°C</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fourDay">
+                <div class="today">
+                    <p class="todayHeader">Today</p>
+                    <img src="./img/some_rain.png" alt="some rain">
+                    <p class="someRain">some rain</p>
+                    <div class="highLow">
+                        <p class="todayHigh">24°</p>
+                        <p class="todayLow">18°</p>
+                    </div>
+                </div>
+                <div class="tomorrow">
+                    <p class="tomorrowHeader">Tomorrow</p>
+                    <img src="./img/some_sun.png" alt="some sun">
+                    <p class="someRain">some sun</p>
+                    <div class="highLow">
+                        <p class="tomorrowHigh">27°</p>
+                        <p class="tomorrowLow">19°</p>
+                    </div>
+                </div>
+                <div class="friday">
+                    <p class="fridayHeader">Friday</p>
+                    <img src="./img/some_clouds.png" alt="some clouds">
+                    <p class="someRain">some clouds</p>
+                    <div class="highLow">
+                        <p class="fridayHigh">21°</p>
+                        <p class="fridayLow">16°</p>
+                    </div>
+                    </div>
+                <div class="saturday">
+                    <p class="saturdayHeader">Saturday</p>
+                    <img src="./img/some_rain.png" alt="some sun">
+                    <p class="someRain">some sun</p>
+                    <div class="highLow">
+                        <p class="saturdayHigh">26°</p>
+                        <p class="saturdayLow">21°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cookieBox">
+                <img src="./img/cookie.png" alt="cookie">
+                <div class="content">
+                    <p class="cookieHeader">Stop! Cookie time</p>
+                    <p class="cookieWords">We use cookies (sadly not the edible one) to personalize</p>
+                    <p class="cookieWords">content and ads, to provide social media features and to</p>
+                    <p id="cookieWords2">analyse our traffic.  <span id="readMore"> Read more...</span></p>
+                </div>
+                <button class="accept" onclick="disappear()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

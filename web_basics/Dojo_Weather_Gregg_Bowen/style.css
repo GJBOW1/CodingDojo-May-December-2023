@@ -1,0 +1,209 @@
+/* * {
+    border: solid 1px red;
+} */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+    background-color: rgb(132, 162, 225);
+    align-items: center;
+    justify-content: center;
+}
+
+.pageLogo {
+    display: flex;
+    font-size: 50px;
+    font: bold;
+    color: white;
+    margin: 0em 8em 0em 10em;
+}
+
+.topNav {
+    display: flex;
+    color: white;
+    font-size: x-large;
+    justify-content: space-around;
+    margin: 0em 19em 0em 0em;
+}
+
+.topNav nav {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0em 2em 0em 0em;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em 0em 0em;
+}
+
+.locationHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.locationDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    display: flex;
+    font-size: xx-large;
+    margin: 0em 20em 0em 0em;
+}
+
+label {
+    display: flex;
+    margin: 0em 0em 0em 0em;
+    font-size: larger;
+}
+
+select {
+    display: flex;
+    width: 40px;
+    margin: 0em 0em 0em 1em;
+}
+
+.fourDay {
+    display: flex;
+    justify-content: center;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 1em 0em 0em;
+    background-color: lightgray;
+}
+
+.today img, .tomorrow img, .friday img, .saturday img {
+    border-radius: 50%;
+    width: 200px; 
+    margin: 0em 1em 0em 1em;
+}
+
+.todayHeader, .tomorrowHeader, .fridayHeader, .saturdayHeader {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.highLow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.todayHigh, .todayLow, .tomorrowHigh, .tomorrowLow, .fridayHigh, .fridayLow, .saturdayHigh, .saturdayLow{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.todayHigh, .tomorrowHigh, .fridayHigh, .saturdayHigh {
+    color: red;
+}
+
+.todayLow, .tomorrowLow, .fridayLow, .saturdayLow {
+    color: blue;
+}
+
+.someRain {
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+}
+
+.tomorrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 1em 0em 0em;
+    background-color: lightgray;
+}
+
+.friday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 1em 0em 0em;
+    background-color: lightgray;
+}
+
+.saturday {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0em 0em 0em;
+    background-color: lightgray;
+}
+
+.cookieBox {
+    position: fixed; 
+    top: 575px;
+    width: 975px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px black solid;
+    background-color: lightgray;
+    margin: .5em 0em 0em 0em;
+}
+
+.cookieBox img {
+    display: flex;
+    width: 100px;
+}
+
+.cookieHeader {
+    font-size: x-large;
+    margin: 0em;
+    font-weight: bold;
+}
+.cookieWords, .cookieHeader {
+    margin: 0em;
+}
+
+.cookieWords, #cookieWords2 {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    margin: 0em 0em 0em 0em;
+    font-size: larger;
+}
+
+#cookieWords2, #readMore {
+    display: flex; 
+    flex-direction: row;
+}
+
+#readMore {
+    margin: 0em 0em 0em .5em;
+    color: blue;
+    text-decoration: underline;
+}
+
+.accept {
+    dsiplay: flex;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(132, 162, 225);
+    box-shadow: 5px 5px black;
+    font-weight: bold;
+}
