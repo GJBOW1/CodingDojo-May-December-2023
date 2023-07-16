@@ -931,5 +931,17 @@ if(today.getDay() != 1) {
 }
 
 
+*Rolling a die or dice
 
+six represents the floor (maximum). 
+
+
+function d6() {
+    var roll = Math.floor(6 * Math.random()) + 1;
+    return roll;
+}
+    
+var playerRoll = d6();
+console.log("The player rolled: " + playerRoll);
 */
+
